@@ -7,5 +7,6 @@ sudo apt-get install libopenblas-dev
 
 sudo apt-get install libatlas-base-dev
 
+# https://kongnamool.tistory.com/30 라즈베리에서 tensorflow 설치 하기
 sudo -H pip3 install tensorflow-2.2.0-cp37-cp37m-linux_armv7l.whl wrapt --upgrade --ignore-installed
 ```
