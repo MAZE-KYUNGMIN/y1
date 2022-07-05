@@ -10,6 +10,8 @@ lst = glob.glob('/Users/kyungmin/study/images/*.jpg')
 files = []
 close = []
 count=0
+
+
 for i in lst:
     files.append(('files',(f'{i}',open(i,'rb') ,'uploads')))
     close.append(open(i,'rb'))
