@@ -9,12 +9,13 @@ while cap.isOpened():
     tm = strftime('%H:%M:%S')
     _, frame = cap.read()
 
-    save_path = os.getcwd()+f'/{count}.jpg'
-
+    save_path = os.getcwd()+f'/pictures/{count}.jpg'
+    while os.path.exists(save_path):
+        count += 1
+        save_path = os.getcwd()+f'/pictures/{count}.jpg'
     cv2.imwrite(save_path,frame)
-    print(tm)
     count+=1
-    if count>10:
+    if count>20:
             break
 
 cap.release()

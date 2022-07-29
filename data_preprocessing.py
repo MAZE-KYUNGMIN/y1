@@ -9,18 +9,21 @@ def len_path(path):
 
 
 
-def match(images_path,labels_path):
-    names = []
-    labels = glob(f'{labels_path}/*')
-    for i in labels:
-        names.append(Path(i).stem)
-
-    images = glob(f'{images_path}/*')
+def match(images,labels):
+    images = os.listdir(images)
+    labels = os.listdir(labels)
+    count = 0
     for i in images:
-        if Path(i).stem not in names:
-            os.remove(i)
+        j = i[:-3] + 'txt'
+        if j not in labels:
+            path = os.path.join(os.getcwd(),'preprocessing/images/'+i)
+            print(os.path.exists(path))
+            if os.path.exists(path):
+                os.remove(path)
+        else:
+            pass
+    return 's'
 
-    return 'success'
     
 def split_image(lst,path):
     for i,img in enumerate(lst):
@@ -41,9 +44,11 @@ def split_label(lst,save_path):
             f.write(lines)
 
 
-label_lst = glob('/Users/kyungmin/maze/y1/lucida/images/*')
-save_path = '/Users/kyungmin/maze/y1/lucida/train'
-split_label(label_lst,save_path)
+
+
+images=  'preprocessing/images/'
+labels = 'preprocessing/labels/'
+match(images,labels)
 
 # BASE_PATH = '.'
 # BASE_PATH = os.path.abspath(BASE_PATH)

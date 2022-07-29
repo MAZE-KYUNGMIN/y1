@@ -22,7 +22,7 @@ def show_image(img_path,x1,y1,x2,y2,save_path):
     cv2.rectangle(img,(x1,y1),(x2,y2),red_color,2)
     cv2.imwrite(save_path,img)
 
-    return 'success'
+    return print('success')
 
 
 
@@ -30,12 +30,17 @@ def show_image(img_path,x1,y1,x2,y2,save_path):
 # opt=  parse_opt()
 
 
-# show_image('/Users/kyungmin/maze/y1/194.jpg',0,130,165,192,'/Users/kyungmin/maze/y1/area1.jpg')
-# show_image('/Users/kyungmin/maze/y1/194.jpg',0,224,276,411,'/Users/kyungmin/maze/y1/area2.jpg')
-# show_image('/Users/kyungmin/maze/y1/194.jpg',170,78,282,150,'/Users/kyungmin/maze/y1/area3.jpg')
-# show_image('/Users/kyungmin/maze/y1/194.jpg',460,335,640,480,'/Users/kyungmin/maze/y1/area4.jpg')
+# show_image('/Users/kyungmin/maze/y1/1655.jpg',252,194,362,292,'/Users/kyungmin/maze/y1/area1.jpg')
+# show_image('/Users/kyungmin/maze/y1/1655.jpg',0,160,106,215,'/Users/kyungmin/maze/y1/area2.jpg')
+# show_image('/Users/kyungmin/maze/y1/1655.jpg',91,91,206,154,'/Users/kyungmin/maze/y1/area3.jpg')
+# show_image('/Users/kyungmin/maze/y1/1655.jpg',0,258,240,430,'/Users/kyungmin/maze/y1/area4.jpg')
+# show_image('/Users/kyungmin/maze/y1/1655.jpg',404,323,640,480,'/Users/kyungmin/maze/y1/area5.jpg')
+# show_image('/Users/kyungmin/maze/y1/1655.jpg',538,228,640,305,'/Users/kyungmin/maze/y1/area6.jpg')
 
-show_image('/Users/kyungmin/maze/y1/194.jpg',0,130,165,192,'/Users/kyungmin/maze/y1/area.jpg')
-show_image('/Users/kyungmin/maze/y1/area.jpg',0,224,276,411,'/Users/kyungmin/maze/y1/area.jpg')
-show_image('/Users/kyungmin/maze/y1/area.jpg',170,78,282,150,'/Users/kyungmin/maze/y1/area.jpg')
-show_image('/Users/kyungmin/maze/y1/area.jpg',460,335,640,480,'/Users/kyungmin/maze/y1/area.jpg')
+
+# show_image('/Users/kyungmin/maze/y1/1655.jpg',252,194,362,292,'/Users/kyungmin/maze/y1/all_area.jpg')
+# show_image('/Users/kyungmin/maze/y1/all_area.jpg',0,160,106,215,'/Users/kyungmin/maze/y1/all_area.jpg')
+# show_image('/Users/kyungmin/maze/y1/all_area.jpg',91,91,206,154,'/Users/kyungmin/maze/y1/all_area.jpg')
+# show_image('/Users/kyungmin/maze/y1/all_area.jpg',0,258,240,430,'/Users/kyungmin/maze/y1/all_area.jpg')
+# show_image('/Users/kyungmin/maze/y1/all_area.jpg',404,323,640,480,'/Users/kyungmin/maze/y1/all_area.jpg')
+# show_image('/Users/kyungmin/maze/y1/all_area.jpg',538,228,640,305,'/Users/kyungmin/maze/y1/all_area.jpg')
